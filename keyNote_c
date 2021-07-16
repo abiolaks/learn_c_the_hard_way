@@ -1,0 +1,26 @@
+The c executable will run despite run but will produce the wrong result.
+
+The make command is use to built c source file into executable that could be run.
+
+You can create a Makefile to specify how you want the program to be build.
+
+Introducing Valgrind
+Vagrind is a program that runs your program and then reports on all of the horrible mistakes that is made.
+
+Learn to know how to install things from source
+Steps: 
+Download a source acrchive file to get the source
+use the md5sum to make sure it matches the one on the site
+unpack the acrchive to extract the file onto your computer
+Run ./configure to setup build configurations
+Run make it build just like you've been doing
+Run sudo make install to install it onto your computer
+
+Follow the above steps to install vagrind
+
+Fix your program using valgrind and the compiler as your guide
+an #include is a way to import  the contents of one file into a source file.C has the convention of using .h extensions for header files, which then contain lists of functions you want to use in your program
+c makes a distinction between single quote for a char and double quote for string of charaters char[]
+You get a segmentation fault when you pass the wrong type of data type and attempt to use it
+when valgrind is run and you can compiler issuing line number that is quite extremmely and unreasonable value use this option
+ valgrind --track-origins=yes the executable
